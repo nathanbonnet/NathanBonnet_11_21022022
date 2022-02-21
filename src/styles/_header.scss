@@ -1,0 +1,38 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    .logo {
+        width: 145px;
+        height: 47px;
+    }
+    .menu {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        div {
+            display: flex;
+            justify-content: space-between;
+        }
+        .nav {
+            color: red;
+            text-decoration: none;
+            text-align: right;
+            margin-right: 10px;
+            margin-left: 10px;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .header {
+        .logo {
+            width: 210px;
+            height: 68px;
+        }
+    }
+}
