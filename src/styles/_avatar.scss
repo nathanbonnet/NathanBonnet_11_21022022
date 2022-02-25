@@ -1,0 +1,25 @@
+.bloc-host {
+    .name {
+        text-align: right;
+        color: #FF6060;
+        margin-right: 10px;
+        .firstName, .lastName {
+            margin: 0 !important;
+        }
+    }
+    
+    .avatar {
+        border-radius: 50%;
+        width: 32px;
+        height: 32px;
+    }
+}
+
+@media (min-width: 768px) {
+    .bloc-host {
+        .avatar {
+            width: 64px;
+            height: 64px;
+        }
+    }
+}

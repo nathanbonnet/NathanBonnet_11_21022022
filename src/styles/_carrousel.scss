@@ -1,95 +1,64 @@
-.carousel {
-    width: 100%;
-    height: 255px;
-    object-fit: cover;
-    border-radius: 10px;
+.image {
+    display: none;
 }
 
-h3 {
+.none {
+    display: none;
+}
+
+.block {
+    display: block;
+}
+
+.content-carousel {
+    user-select: none;
+    margin-top: 30px;
     position: relative;
-    .number {
-        display: none;
-        color: white;
-        text-align: center;
+    .image {
+        img {
+            width: 100%;
+            object-fit: cover;
+            height: 255px;
+            border-radius: 10px;
+        }
+    }
+    #prev, #next {
         position: absolute;
-        bottom: 0 !important;
+        bottom: 0;
+        top: 0;
+        display: flex;
+        align-items: center;
+        color: white;
+        font-size: 20px;
+    }
+    #prev {
+        left: 20px;
+    }
+    #next {
+        right: 20px;
+    }
+    .number {
+        position: absolute;
+        bottom: 0;
+        text-align: center;
         width: 100%;
-    }
-}
-
-.control-disabled {
-    display: block !important;
-}
-
-.slick-dots {
-    display: none !important;
-}
-
-.slick-next .slick-prev{
-    z-index: 200;
-    opacity: 1 !important;
-    top: 0 !important;
-    bottom: 0 !important;
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    margin-top: auto !important;
-    margin-bottom: auto !important;
-}
-.slick-next {
-    right: 10px !important;
-    &:before {
-        content: ">" !important;
-        font-size: 30px !important;
-    }
-}
-.slick-prev {
-    left: 10px !important;
-    &:before {
-        content: "<" !important;
-        font-size: 30px !important;
+        color: white;
+        display: none;
     }
 }
 
 @media (min-width: 768px) {
-    h3 {
+    .content-carousel{
+        .image {
+            img {
+                height: 415px;
+            }
+        }
+        #prev, #next {
+            font-size: 50px;
+        }
         .number {
             display: block;
-            font-size: 18px;
-        }
-    }
-    .carousel {
-        height: 415px;
-    }
-
-    .slick-prev {
-        left: 70px !important;
-        z-index: 200;
-        opacity: 1 !important;
-        top: 0 !important;
-        bottom: 0 !important;
-        display: flex !important;
-        justify-content: center !important;
-        align-items: center !important;
-        margin-top: auto !important;
-        margin-bottom: auto !important;
-        &:before {
-            font-size: 100px !important;
-        }
-    }
-    .slick-next {
-        right: 70px !important;
-        z-index: 200;
-        opacity: 1 !important;
-        top: 0 !important;
-        bottom: 0 !important;
-        display: flex !important;
-        justify-content: center !important;
-        align-items: center !important;
-        margin-top: auto !important;
-        margin-bottom: auto !important;
-        &:before {
-            font-size: 100px !important;
         }
     }
 }

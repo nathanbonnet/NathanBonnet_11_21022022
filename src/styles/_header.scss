@@ -21,6 +21,7 @@
             text-align: right;
             margin-right: 10px;
             margin-left: 10px;
+            font-size: 12px;
             &:hover {
                 text-decoration: underline;
             }
@@ -33,6 +34,13 @@
         .logo {
             width: 210px;
             height: 68px;
+        }
+        .menu {
+            div {
+                .nav {
+                    font-size: 24px;
+                }
+            }
         }
     }
 }

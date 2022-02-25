@@ -1,0 +1,30 @@
+.content-tag {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    .tag {
+        border-radius: 20px;
+        width: 84px;
+        height: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #FF6060;
+        color: white;
+        font-size: 10px;
+        margin-right: 5px;
+        margin-top: 0px;
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 768px){
+    .content-tag {
+        width: 80%;
+        .tag {
+            font-size: 14px;
+            width: 115px;
+            height: 25px;
+        }
+    }
+}
