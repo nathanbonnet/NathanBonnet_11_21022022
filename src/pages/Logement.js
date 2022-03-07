@@ -21,7 +21,7 @@ const Logement = () => {
                     <div className="content_logement">
                         <div className="content_presentation">
                             <div className="presentation">
-                                <h1>{Data.logement[i].title}</h1>
+                                <h1 className="title">{Data.logement[i].title}</h1>
                                 <h2>{Data.logement[i].location}</h2>
                                 <Tags tag={Data.logement[i].tags}/>
                             </div>

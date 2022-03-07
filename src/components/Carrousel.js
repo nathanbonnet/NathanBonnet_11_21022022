@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import "../styles/_carrousel.scss";
 import fontawesome from '@fortawesome/fontawesome'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -29,8 +29,10 @@ const Carrousel = (logement) => {
         images[index].classList.add("block");
         images[index].classList.remove("none");
     }
-
-    setTimeout(() => show_image(index), 10);
+    
+    useEffect(() => {
+        show_image(index)
+    })
 
     return (
         <div className="content-carousel">
@@ -38,7 +40,7 @@ const Carrousel = (logement) => {
                 let number = image.substr(-5, 1);
                 return (
                     <div key={number} className="image">
-                        <img src={image}/>
+                        <img src={image} alt="image du logement"/>
                         <p className="number">{number}/{logement.location.pictures.length}</p>
                     </div>
                 )

@@ -5,7 +5,6 @@ const Ratings = (star) => {
     for (let i = 0; i < star.star; i++) {
         test.push(i)
     }
-    console.log(star.star);
     let starMax = 5;
     let toto = starMax - star.star;
     let tata = [];
@@ -17,13 +16,13 @@ const Ratings = (star) => {
            {test.map((star, index) => {
                index += 1;
                 return (
-                    <span className="star on">&#9733;</span>
+                    <span key={index + "on"} className="star on">&#9733;</span>
                 );
             })}
             {tata.map((star, index) => {
                index += 1;
                 return (
-                    <span className="star off">&#9733;</span>
+                    <span key={index + "off"} className="star off">&#9733;</span>
                 );
             })}
         </div>
@@ -31,4 +30,3 @@ const Ratings = (star) => {
 }
 
 export default Ratings
-{/* <img src={process.env.PUBLIC_URL + '/img/star-checked.png'} /> */}

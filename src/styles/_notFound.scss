@@ -1,4 +1,4 @@
-h1 {
+.title_notFound {
     text-align: center;
     font-size: 96px;
     color: #FF6060;
@@ -22,7 +22,7 @@ h1 {
 }
 
 @media (min-width: 768px) {
-    h1 {
+    .title_notFound {
         font-size: 288px;
     }
     .message {

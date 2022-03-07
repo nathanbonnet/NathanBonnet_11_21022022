@@ -7,14 +7,14 @@ const LocationHome = () => {
     return (
         Data.logement.map(location => {
             return (
-                <>
-                    <NavLink className="bloc" to={"a-propos/"+ location.id}>
+                <div className="bloc" key={location.id}>
+                    <NavLink to={"a-propos/"+ location.id}>
                         <img src={location.cover} alt={location.title}/>
                         <div>
                             <p>{location.title}</p>
                         </div>
                     </NavLink>
-                </>
+                </div>
             )
         })
     )

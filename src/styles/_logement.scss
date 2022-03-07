@@ -8,9 +8,10 @@
         width: 100%;
         .presentation {
             width: 100%;
-            h1 {
+            .title {
                 font-size: 18px;
-                text-align: left;
+                text-align: left !important;
+                color: #FF6060;
                 margin: 0;
             }
             h2 {
@@ -47,7 +48,7 @@
         .content_presentation {
             width: 65%;
             .presentation {
-                h1 {
+                .title {
                     font-size: 36px;
                 }
                 h2 {
